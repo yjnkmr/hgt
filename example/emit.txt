@@ -1,0 +1,72 @@
+### Executed program : ../bin/markov
+
+# Transition probability from : ecoli_cds.fasta
+# Data type : Observed counts
+# Reading frame : 1
+
+#StateNo. Emitted_symbol Emit_prob
+0 - 1
+1 TTT 1
+2 TTC 1
+3 TTA 1
+4 TTG 1
+5 TCT 1
+6 TCC 1
+7 TCA 1
+8 TCG 1
+9 TAT 1
+10 TAC 1
+11 TAA 1
+12 TAG 1
+13 TGT 1
+14 TGC 1
+15 TGA 1
+16 TGG 1
+17 CTT 1
+18 CTC 1
+19 CTA 1
+20 CTG 1
+21 CCT 1
+22 CCC 1
+23 CCA 1
+24 CCG 1
+25 CAT 1
+26 CAC 1
+27 CAA 1
+28 CAG 1
+29 CGT 1
+30 CGC 1
+31 CGA 1
+32 CGG 1
+33 ATT 1
+34 ATC 1
+35 ATA 1
+36 ATG 1
+37 ACT 1
+38 ACC 1
+39 ACA 1
+40 ACG 1
+41 AAT 1
+42 AAC 1
+43 AAA 1
+44 AAG 1
+45 AGT 1
+46 AGC 1
+47 AGA 1
+48 AGG 1
+49 GTT 1
+50 GTC 1
+51 GTA 1
+52 GTG 1
+53 GCT 1
+54 GCC 1
+55 GCA 1
+56 GCG 1
+57 GAT 1
+58 GAC 1
+59 GAA 1
+60 GAG 1
+61 GGT 1
+62 GGC 1
+63 GGA 1
+64 GGG 1
