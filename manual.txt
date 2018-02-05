@@ -1,0 +1,64 @@
+HGT detection program, version 0.9
+
+
+1) -------- Prerequisites --------
+
+  OS: UNIX/Linux
+  Compiler: GCC (A specific version of GLIBCXX might be required.)
+
+
+
+2) -------- Installation from the source code --------
+
+  Precompiled programs are already in bin directory, you can use those.
+  If you want to build those from source codes, move to src directory, 
+  and edit Makefile if necessary. Then, do "make".
+
+    $ make
+    $ make install
+
+  Then, add the path to bin directory to your PATH environment variable.
+  
+
+3) -------- Usage --------
+
+  3-1) Construction of Markov model
+
+    Command: 
+
+      $ markov C 6 3 3 -t trans.txt -e emit.txt INPUT
+  
+    INPUT is your CDS file in multi-FASTA format. This command will output two files, 
+    trans.txt and emit.txt.
+
+
+  3-2) Computation of HGT index (I index)
+
+    Command:
+
+      $ predict INPUT 6 3 -u trans.txt emit.txt > OUTPUT 
+
+    INPUT, trans.txt and emit.txt are the same as above. The result will be  
+    written into OUTPUT in which the 7th column is I index.
+ 
+
+  3-3) Example
+
+    There are sample data in example directory, these were output by the
+    following commands:
+
+      $ markov C 6 3 3 -t trans.txt -e emit.txt ecoli_cds.fasta
+      $ predict ecoli_cds.fasta 6 3 -u trans.txt emit.txt > ecoli_cds.out.txt
+
+
+  ##### Caution in ver 0.9 #####
+  This program is originally developed for hidden Markov modeling and has 
+  other options for it, but those are under construction. Therefore, use of
+  the options not shown above is UNRECOMMENDED so far (in ver 0.9).
+
+
+
+4) -------- Contact --------
+
+  E-mail: yojnakam@affrc.go.jp
+
